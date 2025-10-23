@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<style media="print">
+  body * {
+    visibility: hidden;
+  }
+
+  #templateBody, #templateBody * {
+    visibility: visible;
+  }
+
+  #templateBody {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+</style>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="0484562807a97172-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" href="7db6c35d839a711c-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" href="8888a3826f4a3af4-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" href="b957ea75a84b6ea7-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" href="eafabf029ad39a43-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="stylesheet" href="88269f753ebcc816.css" data-precedence="next"><link rel="stylesheet" href="7c127a20a518b1e5.css" data-precedence="next"><link rel="stylesheet" href="a2caf21c8afae802.css" data-precedence="next"><link rel="stylesheet" href="202bd9b169b3ce5b.css" data-precedence="next"><link rel="stylesheet" href="5a56e3c1761e58ad.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="webpack-1801a932916642c6.js.download"><script src="./fd9d1056-3d37a866c9362c5f.js.download" async=""></script><script src="7023-f38148b0de8392d8.js.download" async=""></script><script src="main-app-55bbd77d79f9187f.js.download" async=""></script><script src="dc112a36-dd72e56818520f67.js.download" async=""></script><script src="9164-0d876c4ff6f41501.js.download" async=""></script><script src="3155-34ff46f126318506.js.download" async=""></script><script src="4885-4a6eda48eefeae46.js.download" async=""></script><script src="5956-453f490be873c690.js.download" async=""></script><script src="6260-d54d2b3b24496e9e.js.download" async=""></script><script src="3383-4ce9731c992d18e9.js.download" async=""></script><script src="layout-1c6c8d31d5320137.js.download" async=""></script><link rel="preload" href="remita-pay-inline.bundle.js.download" as="script"><link rel="icon" href="favicon.ico" type="image/x-icon" sizes="39x36"><meta name="next-size-adjust"><script src="polyfills-78c92fac7aa8fdd8.js.download" nomodule=""></script><style><style type="text/css" data-primereact-style-id="base">
+.p-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primereact-style-id="global"></style><style type="text/css" data-primereact-style-id="common">
+@layer primereact {
+    .p-component, .p-component * {
+        box-sizing: border-box;
+    }
+
+    .p-hidden {
+        display: none;
+    }
+
+    .p-hidden-space {
+        visibility: hidden;
+    }
+
+    .p-reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        text-decoration: none;
+        font-size: 100%;
+        list-style: none;
+    }
+
+    .p-disabled, .p-disabled * {
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .p-component-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .p-unselectable-text {
+        user-select: none;
+    }
+
+    .p-scrollbar-measure {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        position: absolute;
+        top: -9999px;
+    }
+
+    @-webkit-keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes p-fadein {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .p-link {
+        text-align: left;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .p-link:disabled {
+        cursor: default;
+    }
+
+    /* Non react overlay animations */
+    .p-connected-overlay {
+        opacity: 0;
+        transform: scaleY(0.8);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-visible {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    .p-connected-overlay-hidden {
+        opacity: 0;
+        transform: scaleY(1);
+        transition: opacity .1s linear;
+    }
+
+    /* React based overlay animations */
+    .p-connected-overlay-enter {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-connected-overlay-enter-active {
+        opacity: 1;
+        transform: scaleY(1);
+        transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-connected-overlay-enter-done {
+        transform: none;
+    }
+
+    .p-connected-overlay-exit {
+        opacity: 1;
+    }
+
+    .p-connected-overlay-exit-active {
+        opacity: 0;
+        transition: opacity .1s linear;
+    }
+
+    /* Toggleable Content */
+    .p-toggleable-content-enter {
+        max-height: 0;
+    }
+
+    .p-toggleable-content-enter-active {
+        overflow: hidden;
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
+    }
+
+    .p-toggleable-content-enter-done {
+        transform: none;
+    }
+
+    .p-toggleable-content-exit {
+        max-height: 1000px;
+    }
+
+    .p-toggleable-content-exit-active {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+    }
+
+    /* @todo Refactor */
+    .p-menu .p-menuitem-link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+.p-button {
+    margin: 0;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-button-group .p-button {
+    margin: 0;
+}
+
+.p-button-group .p-button:not(:last-child) {
+    border-right: 0 none;
+}
+
+.p-button-group .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-button-group .p-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-button-group .p-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-button-group .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+    
+.p-inputtext {
+    margin: 0;
+}
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -0.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label,
+.p-float-label .p-mention ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label,
+.p-float-label .p-tooltip-target-wrapper ~ label {
+    top: -0.75rem;
+    font-size: 12px;
+}
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-right > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > svg,
+.p-input-icon-left > .p-input-prefix,
+.p-input-icon-right > .p-input-suffix {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+    
+.p-icon {
+    display: inline-block;
+}
+
+.p-icon-spin {
+    -webkit-animation: p-icon-spin 2s infinite linear;
+    animation: p-icon-spin 2s infinite linear;
+}
+
+svg.p-icon {
+    pointer-events: auto;
+}
+
+svg.p-icon g,
+.p-disabled svg.p-icon {
+    pointer-events: none;
+}
+
+@-webkit-keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes p-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+}
+</style><style type="text/css" data-primereact-style-id="sidebar">
+@layer primereact {
+    .p-sidebar-mask {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+        background-color: transparent;
+        transition-property: background-color;
+    }
+    
+    .p-sidebar-visible {
+        display: flex;
+    }
+    
+    .p-sidebar-mask.p-component-overlay {
+        pointer-events: auto;
+    }
+    
+    .p-sidebar {
+        display: flex;
+        flex-direction: column;
+        pointer-events: auto;
+        transform: translate3d(0px, 0px, 0px);
+        position: relative;
+    }
+    
+    .p-sidebar-content {
+        overflow-y: auto;
+        flex-grow: 1;
+    }
+    
+    .p-sidebar-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .p-sidebar-custom-header {
+        justify-content: space-between;
+    }
+    
+    .p-sidebar-icons {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    
+    .p-sidebar-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .p-sidebar-full .p-sidebar {
+        transition: none;
+        transform: none;
+        width: 100vw;
+        height: 100vh;
+        max-height: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    
+    /* Animation */
+    /* Top, Bottom, Left and Right */
+    .p-sidebar-top .p-sidebar-enter,
+    .p-sidebar-top .p-sidebar-exit-active {
+        transform: translate3d(0px, -100%, 0px);
+    }
+    
+    .p-sidebar-bottom .p-sidebar-enter,
+    .p-sidebar-bottom .p-sidebar-exit-active {
+        transform: translate3d(0px, 100%, 0px);
+    }
+    
+    .p-sidebar-left .p-sidebar-enter,
+    .p-sidebar-left .p-sidebar-exit-active {
+        transform: translate3d(-100%, 0px, 0px);
+    }
+    
+    .p-sidebar-right .p-sidebar-enter,
+    .p-sidebar-right .p-sidebar-exit-active {
+        transform: translate3d(100%, 0px, 0px);
+    }
+    
+    .p-sidebar-top .p-sidebar-enter-active,
+    .p-sidebar-bottom .p-sidebar-enter-active,
+    .p-sidebar-left .p-sidebar-enter-active,
+    .p-sidebar-right .p-sidebar-enter-active {
+        transform: translate3d(0px, 0px, 0px);
+        transition: all 0.3s;
+    }
+    
+    .p-sidebar-top .p-sidebar-enter-done,
+    .p-sidebar-bottom .p-sidebar-enter-done,
+    .p-sidebar-left .p-sidebar-enter-done,
+    .p-sidebar-right .p-sidebar-enter-done {
+        transform: none;
+    }
+    
+    .p-sidebar-top .p-sidebar-exit-active,
+    .p-sidebar-bottom .p-sidebar-exit-active,
+    .p-sidebar-left .p-sidebar-exit-active,
+    .p-sidebar-right .p-sidebar-exit-active {
+        transition: all 0.3s;
+    }
+    
+    /* Full */
+    .p-sidebar-full .p-sidebar-enter {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    
+    .p-sidebar-full .p-sidebar-enter-active {
+        opacity: 1;
+        transform: scale(1);
+        transition: all 0.15s cubic-bezier(0, 0, 0.2, 1);
+    }
+    
+    .p-sidebar-full .p-sidebar-enter-done {
+        transform: none;
+    }
+    
+    .p-sidebar-full .p-sidebar-exit-active {
+        opacity: 0;
+        transform: scale(0.5);
+        transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    /* Size */
+    .p-sidebar-left .p-sidebar {
+        width: 20rem;
+        height: 100%;
+    }
+    
+    .p-sidebar-right .p-sidebar {
+        width: 20rem;
+        height: 100%;
+    }
+    
+    .p-sidebar-top .p-sidebar {
+        height: 10rem;
+        width: 100%;
+    }
+    
+    .p-sidebar-bottom .p-sidebar {
+        height: 10rem;
+        width: 100%;
+    }
+    
+    .p-sidebar-left .p-sidebar-sm,
+    .p-sidebar-right .p-sidebar-sm {
+        width: 20rem;
+    }
+    
+    .p-sidebar-left .p-sidebar-md,
+    .p-sidebar-right .p-sidebar-md {
+        width: 40rem;
+    }
+    
+    .p-sidebar-left .p-sidebar-lg,
+    .p-sidebar-right .p-sidebar-lg {
+        width: 60rem;
+    }
+    
+    .p-sidebar-top .p-sidebar-sm,
+    .p-sidebar-bottom .p-sidebar-sm {
+        height: 10rem;
+    }
+    
+    .p-sidebar-top .p-sidebar-md,
+    .p-sidebar-bottom .p-sidebar-md {
+        height: 20rem;
+    }
+    
+    .p-sidebar-top .p-sidebar-lg,
+    .p-sidebar-bottom .p-sidebar-lg {
+        height: 30rem;
+    }
+    
+    .p-sidebar-left .p-sidebar-view,
+    .p-sidebar-right .p-sidebar-view,
+    .p-sidebar-top .p-sidebar-view,
+    .p-sidebar-bottom .p-sidebar-view {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .p-sidebar-left .p-sidebar-content,
+    .p-sidebar-right .p-sidebar-content,
+    .p-sidebar-top .p-sidebar-content,
+    .p-sidebar-bottom .p-sidebar-content {
+        width: 100%;
+        height: 100%;
+    }
+    
+    @media screen and (max-width: 64em) {
+        .p-sidebar-left .p-sidebar-lg,
+        .p-sidebar-left .p-sidebar-md,
+        .p-sidebar-right .p-sidebar-lg,
+        .p-sidebar-right .p-sidebar-md {
+            width: 20rem;
+        }
+    }        
+}
+</style><title>TCC Certificate</title><meta name="description" content="" data-rh="true"><style type="text/css" data-primereact-style-id="toast">
+@layer primereact {
+    .p-toast {
+        width: calc(100% - var(--toast-indent, 0px));
+        max-width: 25rem;
+    }
+    
+    .p-toast-message-icon {
+        flex-shrink: 0;
+    }
+    
+    .p-toast-message-content {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .p-toast-message-text {
+        flex: 1 1 auto;
+    }
+    
+    .p-toast-summary {
+        overflow-wrap: anywhere;
+    }
+    
+    .p-toast-detail {
+        overflow-wrap: anywhere;
+    }
+    
+    .p-toast-top-center {
+        transform: translateX(-50%);
+    }
+    
+    .p-toast-bottom-center {
+        transform: translateX(-50%);
+    }
+    
+    .p-toast-center {
+        min-width: 20vw;
+        transform: translate(-50%, -50%);
+    }
+    
+    .p-toast-icon-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .p-toast-icon-close.p-link {
+        cursor: pointer;
+    }
+    
+    /* Animations */
+    .p-toast-message-enter {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    
+    .p-toast-message-enter-active {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 0.3s, opacity 0.3s;
+    }
+    
+    .p-toast-message-enter-done {
+        transform: none;
+    }
+    
+    .p-toast-message-exit {
+        opacity: 1;
+        max-height: 1000px;
+    }
+    
+    .p-toast .p-toast-message.p-toast-message-exit-active {
+        opacity: 0;
+        max-height: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+        transition: max-height 0.45s cubic-bezier(0, 1, 0, 1), opacity 0.3s, margin-bottom 0.3s;
+    }
+}
+</style></head><body class="__variable_d5a796 __className_d5a796"><div class="Toastify"></div><div class="relative"><div class="sticky top-0 z-50"><div class="inline-flex w-full items-center justify-between border border-gray-300 bg-[#FDFDFD] py-3.5 pl-8 pr-[32px] md:pr-[64px]"><div class="relative w-fit"><a href="https://borno.flopay.net/payer/dashboard"><img src="Organization_2_Code_logogFk" alt="logo" class="max-h-[50px]"></a></div><div class="md:hidden"><div class="block"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18" stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round"></path></svg></div><div class="hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10ZM9.17 14.83l5.66-5.66M14.83 14.83 9.17 9.17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div></div><div class="hidden h-9 items-center justify-start gap-6 md:inline-flex"><div class="flex items-center justify-start gap-3"><div class="relative flex h-9 w-9 flex-col items-center justify-center rounded-[48px] border border-neutral-300"><div class="relative h-6 w-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path opacity=".4" d="m19.34 14.488-1-1.66c-.21-.37-.4-1.07-.4-1.48v-2.53c0-3.26-2.65-5.92-5.92-5.92S6.1 5.558 6.1 8.818v2.53c0 .41-.19 1.11-.4 1.47l-1.01 1.67c-.4.67-.49 1.41-.24 2.09.24.67.81 1.19 1.55 1.44 1.94.66 3.98.98 6.02.98 2.04 0 4.08-.32 6.02-.97.7-.23 1.24-.76 1.5-1.45s.19-1.45-.2-2.09Z" fill="#959595"></path><path d="M14.25 3.32c-.69-.27-1.44-.42-2.23-.42-.78 0-1.53.14-2.22.42.43-.81 1.28-1.32 2.22-1.32.95 0 1.79.51 2.23 1.32ZM14.83 20.01A3.014 3.014 0 0 1 12 22c-.79 0-1.57-.32-2.12-.89-.32-.3-.56-.7-.7-1.11.13.02.26.03.4.05.23.03.47.06.71.08.57.05 1.15.08 1.73.08.57 0 1.14-.03 1.7-.08.21-.02.42-.03.62-.06l.49-.06Z" fill="#959595"></path></svg></div><div class="absolute right-0 top-0 h-[9px] w-[9px] rounded-[9px] border-2 border-neutral-300 bg-[#959595]"></div></div></div><div class="flex items-center justify-start gap-2"><div class="flex items-center justify-start gap-2"><div class="inline-flex h-[41px] w-[41px] items-center justify-center rounded-[26.48px] border border-[#56b8d7] bg-[#20884e] pb-[1.72px] pl-[7.69px] pr-[9.31px] pt-[1.28px] shadow-inner"><div class="text-[25.62px] font-bold leading-[38.44px] text-[#d0d7d9]">P</div></div><div class="inline-flex flex-col items-start justify-start"><div class="self-stretch text-sm font-normal leading-[21px] text-neutral-500">undefined undefined</div><div class="self-stretch text-sm font-normal leading-[21px] text-neutral-500"></div></div></div></div></div></div></div><div></div><div class="flex w-full h-full"><div class="hidden md:block fixed z-30 h-full w-[280px] top-0 left-0"><div class="w-full h-full relative px-3 pt-20 bg-[#f6f6f6] border-r border-neutral-200 overflow-hidden overflow-y-scroll"><div class="w-full flex-col justify-between items-start inline-flex pb-10"><div class="flex flex-col w-full"><div class="self-stretch flex-col justify-start items-center gap-5 flex"><a class="self-stretch px-6 py-2 false justify-start items-center gap-6 inline-flex cursor-pointer" href="https://borno.flopay.net/payer/settings"><div class="w-5 h-5 justify-center items-center flex"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 15.75c-2.07 0-3.75-1.68-3.75-3.75 0-2.07 1.68-3.75 3.75-3.75 2.07 0 3.75 1.68 3.75 3.75 0 2.07-1.68 3.75-3.75 3.75Zm0-6c-1.24 0-2.25 1.01-2.25 2.25s1.01 2.25 2.25 2.25 2.25-1.01 2.25-2.25S13.24 9.75 12 9.75Z" fill="#5D5D5D"></path><path d="M15.21 22.19c-.21 0-.42-.03-.63-.08-.62-.17-1.14-.56-1.47-1.11l-.12-.2c-.59-1.02-1.4-1.02-1.99 0l-.11.19c-.33.56-.85.96-1.47 1.12-.63.17-1.28.08-1.83-.25l-1.72-.99a2.65 2.65 0 0 1-.98-3.62c.29-.51.37-.97.2-1.26-.17-.29-.6-.46-1.19-.46-1.46 0-2.65-1.19-2.65-2.65v-1.76c0-1.46 1.19-2.65 2.65-2.65.59 0 1.02-.17 1.19-.46.17-.29.1-.75-.2-1.26-.35-.61-.44-1.33-.26-2.01.18-.69.62-1.26 1.24-1.61l1.73-.99c1.13-.67 2.62-.28 3.3.87l.12.2c.59 1.02 1.4 1.02 1.99 0l.11-.19c.68-1.16 2.17-1.55 3.31-.87l1.72.99a2.65 2.65 0 0 1 .98 3.62c-.29.51-.37.97-.2 1.26.17.29.6.46 1.19.46 1.46 0 2.65 1.19 2.65 2.65v1.76c0 1.46-1.19 2.65-2.65 2.65-.59 0-1.02.17-1.19.46-.17.29-.1.75.2 1.26.35.61.45 1.33.26 2.01a2.58 2.58 0 0 1-1.24 1.61l-1.73.99c-.38.21-.79.32-1.21.32ZM12 18.49c.89 0 1.72.56 2.29 1.55l.11.19c.12.21.32.36.56.42.24.06.48.03.68-.09l1.73-1a1.157 1.157 0 0 0 .43-1.57c-.57-.98-.64-1.99-.2-2.76.44-.77 1.35-1.21 2.49-1.21.64 0 1.15-.51 1.15-1.15v-1.76c0-.63-.51-1.15-1.15-1.15-1.14 0-2.05-.44-2.49-1.21-.44-.77-.37-1.78.2-2.76.15-.26.19-.57.11-.87-.08-.3-.27-.54-.53-.7l-1.73-.99a.92.92 0 0 0-1.26.33l-.11.19c-.57.99-1.4 1.55-2.29 1.55-.89 0-1.72-.56-2.29-1.55l-.11-.2a.918.918 0 0 0-1.24-.32l-1.73 1A1.157 1.157 0 0 0 6.19 6c.57.98.64 1.99.2 2.76-.44.77-1.35 1.21-2.49 1.21-.64 0-1.15.51-1.15 1.15v1.76c0 .63.51 1.15 1.15 1.15 1.14 0 2.05.44 2.49 1.21.44.77.37 1.78-.2 2.76-.15.26-.19.57-.11.87.08.3.27.54.53.7l1.73.99c.21.13.46.16.69.1.24-.06.44-.22.57-.43l.11-.19c.57-.98 1.4-1.55 2.29-1.55Z" fill="#5D5D5D"></path></svg></div><div class=" font-normal  leading-snug text-neutral-500 grow shrink basis-0  text-base">Settings</div></a></div></div><div class="self-stretch h-24 flex-col justify-end items-center gap-3 flex"><div class="self-stretch px-6 py-2 h-max items-center inline-flex gap-6 cursor-pointer"><div class="w-5 h-5 justify-center items-center flex"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><path fill="#F83A3A" d="M15.24 22.27h-.13c-4.44 0-6.58-1.75-6.95-5.67-.04-.41.26-.78.68-.82.4-.04.78.27.82.68.29 3.14 1.77 4.31 5.46 4.31h.13c4.07 0 5.51-1.44 5.51-5.51V8.74c0-4.07-1.44-5.51-5.51-5.51h-.13c-3.71 0-5.19 1.19-5.46 4.39-.05.41-.4.72-.82.68a.751.751 0 01-.69-.81c.34-3.98 2.49-5.76 6.96-5.76h.13c4.91 0 7.01 2.1 7.01 7.01v6.52c0 4.91-2.1 7.01-7.01 7.01z"></path><path fill="#F83A3A" d="M15 12.75H3.62c-.41 0-.75-.34-.75-.75s.34-.75.75-.75H15c.41 0 .75.34.75.75s-.34.75-.75.75z"></path><path fill="#F83A3A" d="M5.85 16.1c-.19 0-.38-.07-.53-.22l-3.35-3.35a.754.754 0 010-1.06l3.35-3.35c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06L3.56 12l2.82 2.82c.29.29.29.77 0 1.06-.14.15-.34.22-.53.22z"></path></svg></div><div class="w-[126px] text-red-500 text-base font-normal leading-snug">Logout</div></div></div></div></div></div><div class="p-5 w-full md:ml-[280px] overflow-x-auto"><div><div><div class="p-toast p-component p-toast-top-right p-ripple-disabled" data-pc-name="toast" data-pc-section="root" style="position: fixed; top: 20px; right: 20px;"><div></div></div><div class="my-3"><ul class="list-none p-0 m-0 flex align-items-center font-medium px-3"><li class="content-center"><a class="no-underline line-height-3 cursor-pointer" href="https://borno.flopay.net/payer/tcc"><span class="text-[#3D3D3D] font-normal text-xs">TCC Requests</span></a></li><li class="px-2 content-center"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M8.91 19.92l6.52-6.52c.77-.77.77-2.03 0-2.8L8.91 4.08"></path></svg></li><li><span class="text-[#3D3D3D] font-semibold text-sm line-height-3">TCC Certificate</span></li></ul></div><div class="flex justify-end gap-4 my-3 container mx-auto"><div class=""><button type="button" class="py-3 px-16 disabled:bg-[#D1D1D1] disabled:text-[#F6F6F6] rounded-md text-[#03983F] border border-[#03983F] font-semibold text-base    hover:shadow-none">Back</button></div><div class=""><button onclick="window.print()" type="button" class="w-full py-3 px-16 bg-[#097234] border border-[#097234] rounded-md text-[#F6F6F6] font-semibold text-base text-nowrap  btn-style flex justify-center gap-1 hover:shadow-none"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M7.25 7h9.5V5c0-2-.75-3-3-3h-3.5c-2.25 0-3 1-3 3v2ZM16 15v4c0 2-1 3-3 3h-2c-2 0-3-1-3-3v-4h8Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 10v5c0 2-1 3-3 3h-2v-3H8v3H6c-2 0-3-1-3-3v-5c0-2 1-3 3-3h12c2 0 3 1 3 3ZM17 15H7M7 11h3" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>Print</button></div></div><div class="print-full-page"><div id="templateBody"><style>
+  #container {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    #container {
+      width: 66.666667%;
+    }
+  }
+</style>
+<div style="display: flex; justify-content: center;">
+  <div id="container" style="padding-left: 36px; padding-right: 36px; background-color: #FDFDFD; border-style: solid; border-width: 1px; border-color: #E7E7E7; margin-top: 20px; box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); page-break-after: always;">
+    <div style="display: flex; justify-content: center; margin-top: 12px;">
+      <img src="boirs-logo.jpg" alt="logo" style="max-height: 120px;" data-logo="borno-logo">
+    </div>
+    <div>
+      <div data-portrait="" style="font-weight: 900; width: 100%; font-size: 20px; line-height: 32px; color: #262626; text-align: center; margin-bottom: 4px;">
+        BORNO STATE INTERNAL REVENUE SERVICE 
+      </div>
+      <div style="text-align: center; font-size: 0.875rem; line-height: 1.25rem; color: #4b5563;">
+        <span style="color: #09099e;">Address:</span> Kano/Jos Road, P.M.B 1035, Maiduguri, Borno State, Nigeria.
+      </div>
+      <div style="text-align: center; font-size: 0.875rem; line-height: 1.25rem; color: #4b5563;">
+        <span style="color: #09099e;">Tel:</span> 08035372551, 08027449646, 07062424120, 07036805959 <span style="color: #09099e;">Email Address:</span> info@bornoirs.com, info@itechplatform.net
+      </div>
+    </div>
+    <div style="margin-top: 24px;">
+      <div style="display: flex; gap: 20px; width: 100%;">
+        <div>
+          <img src="39228_payerFiles_555453367677.jpg" alt="passport" style="max-width: 100px; display: block; border-radius: 2px;" data-passport="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-alt-passport="" style="display: none;">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
+          </svg>
+        </div>
+        <div style="display: flex; justify-content: space-between; width: 100%;">
+          <div style="margin-top: 8px;">
+            <p style="font-weight: 600; margin-bottom: 16px;">
+              BOIRS ID:
+              <span style="margin-left: 12px; font-weight: 400; color: #5d5d5d;" data-address-code="">1714-1266-7287</span>
+            </p>
+            <p style="font-weight: 600;">
+              TIN:
+              <span style="margin-left: 12px; font-weight: 400; color: #5d5d5d;" data-payer-tin="">1022047698</span>
+            </p>
+          </div>
+          <div style="margin-top: 8px;">
+            <p style="font-weight: 600; margin-bottom: 16px;">
+              Station:
+              <span style="margin-left: 12px; font-weight: 400; color: #5d5d5d;" data-payer-station="">
+                Revenue Board, Maiduguri
+              </span>
+            </p>
+            <p style="font-weight: 600;">
+              Date:
+              <span style="margin-left: 12px; font-weight: 400; color: #5d5d5d;" data-date="">2025-10-23</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="text-align: center; color: #3d3d3d; font-size: 1.125rem; line-height: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0;">
+        PERSONAL INCOME TAX CLEARANCE CERTIFICATE
+      </h2>
+      <div style="margin-bottom: 3rem; text-align: center; font-style: italic;">This is to certify that</div>
+
+      <p style="color: #5d5d5d; margin-bottom: 2rem;">
+        In line with the requirements of part VI
+        section 30 i of Borno State harmonized revenue law 2020 as amended,
+        Alhaji/Mr/Miss/Madam
+         has settled <span data-sex="">his</span> income tax assessment for the past <span data-no-of-years="">3</span> years.
+        <span style="font-weight: 700; color: black;" data-fullname="">GODSTIME IS THE BEST RESTAURANT & CATERING SERVICES-BN2539158</span> <br> of <span style="font-weight: 700; color: black;" data-fulladdress="">NO 2 OPP FORMER MINISTRY OF AGRICULTURE MONGUNO LGA BORNO STATE</span>
+      </p>
+
+      <div style="margin-bottom: 2rem;">
+        2. Details of his/her assessments are as follows:
+      </div>
+
+      <div style="overflow-x: auto; margin-bottom: 2rem;">
+        <table style="min-width: 100%; border-width: 1px; border-color: #d1d5db; font-size: 0.875rem; line-height: 1.25rem;">
+          <thead>
+            <tr style="background-color: #f3f4f6;" data-table-head="">
+              <th style="border-width: 1px; padding-left: 1rem; padding-right: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem;">
+              </th>
+            
+              <th class="border px-4 py-2">
+                2022
+              </th>
+            
+              <th class="border px-4 py-2">
+                2023
+              </th>
+            
+              <th class="border px-4 py-2">
+                2024
+              </th>
+            </tr>
+          </thead>
+          <tbody data-table-body="">
+              <tr>
+                <td class="border px-4 py-2 font-semibold">Total Income</td>
+                
+                  <td class="border px-4 py-2">
+                    ₦0
+                  </td>
+                
+                  <td class="border px-4 py-2">
+                    ₦0
+                  </td>
+                
+                  <td class="border px-4 py-2">
+                    ₦813,365
+                  </td>
+                
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 font-semibold">Tax Paid</td>
+                
+                  <td class="border px-4 py-2">
+                    ₦0
+                  </td>
+                
+                  <td class="border px-4 py-2">
+                    ₦0
+                  </td>
+                
+                  <td class="border px-4 py-2">
+                    ₦25,000
+                  </td>
+                
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 font-semibold">Payment Ref</td>
+                
+                  <td class="border px-4 py-2">
+                    0.00
+                  </td>
+                    
+                  <td class="border px-4 py-2">
+                    0.00
+                  </td>
+                
+                  <td class="border px-4 py-2">
+                    325013748619
+                  </td>
+                
+              </tr>
+              <tr>
+                <td class="border px-4 py-2 font-semibold">Payment Date</td>
+                
+                  <td class="border px-4 py-2">
+                    2025-10-23
+                  </td>
+                
+                  <td class="border px-4 py-2">
+                    2025-10-23
+                  </td>
+                
+                  <td class="border px-4 py-2">
+                    2025-10-23
+                  </td>
+                
+              </tr>
+            </tbody>
+        </table>
+      </div>
+
+      <div style="display: flex; gap: 64px; margin-bottom: 3rem;">
+        <div>
+          3. Source of Income: <span style="margin-left: 4px; font-weight: 400; color: #5d5d5d;" data-income-source="">GENERAL CONTRACTS & MERCHANDISE</span>
+        </div>
+        <div>
+          4. Expiry Date: <span style="margin-left: 4px; font-weight: 400; color: #5d5d5d;" data-exp="">2025-12-31</span>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <div style="display: flex; justify-content: center;">
+            <img src="borno-chair-signature.jpg" alt="Signature" style="max-height: 100px;" data-signature="">
+          </div>
+          <p style="font-weight: 600;">Prof. Bello Alhaji Ibrahim</p>
+          <p style="font-size: 0.875rem; line-height: 1.25rem; color: #4b5563;">
+            Executive Chairman
+          </p>
+        </div>
+        <div style="text-align: right;">
+          <div style="display: flex; justify-content: center;">
+            <img src="333853367677_PrmsQRCode.png" alt="QRCode" height="80" width="80" data-qr-code="">
+          </div>
+          <p style="font-weight: 600; font-size: 0.875rem; line-height: 1.25rem;">
+            TCC NO:
+            <span style="margin-left: 4px; font-weight: 400; color: #5d5d5d;" data-tcc-no="">TCC/3338537431561</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div></div></div></div></div></div></div><script src="webpack-1801a932916642c6.js.download" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/media/0484562807a97172-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/media/7db6c35d839a711c-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:HL[\"/_next/static/media/8888a3826f4a3af4-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n4:HL[\"/_next/static/media/b957ea75a84b6ea7-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n5:HL[\"/_next/static/media/eafabf029ad39a43-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n6:HL[\"/_next/static/css/88269f753ebcc816.css\",\"style\"]\n7:HL[\"/_next/static/css/7c127a20a518b1e5.css\",\"style\"]\n8:HL[\"/_next/static/css/a2caf21c8afae802.css\",\"style\"]\n9:HL[\"/_next/static/css/202bd9b169b3ce5b.css\",\"style\"]\na:HL[\"/_next/static/css/5a56e3c1761e58ad.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"b:I[95751,[],\"\"]\nd:I[66513,[],\"ClientPageRoot\"]\ne:I[69588,[\"4705\",\"static/chunks/dc112a36-dd72e56818520f67.js\",\"9164\",\"static/chunks/9164-0d876c4ff6f41501.js\",\"3155\",\"static/chunks/3155-34ff46f126318506.js\",\"894\",\"static/chunks/894-40193c007fae840c.js\",\"4885\",\"static/chunks/4885-4a6eda48eefeae46.js\",\"5956\",\"static/chunks/5956-453f490be873c690.js\",\"7699\",\"static/chunks/7699-4772bf8b492da950.js\",\"8299\",\"static/chunks/8299-6e9192569c76bc04.js\",\"9582\",\"static/chunks/9582-a8558ea670a572d6.js\",\"7138\",\"static/chunks/7138-d5cdd209b6f263c3.js\",\"6260\",\"static/chunks/6260-d54d2b3b24496e9e.js\",\"9321\",\"static/chunks/9321-2a2af71021580a1a.js\",\"7096\",\"static/chunks/7096-61eaef2e63a1898f.js\",\"5961\",\"static/chunks/app/(PayerDashboard)/payer/tcc/certificate/page-70a8c63d7879e597.js\"],\"default\",1]\nf:I[39275,[],\"\"]\n10:I[61343,[],\"\"]\n11:I[52798,[\"9164\",\"static/chunks/9164-0d876c4ff6f41501.js\",\"3155\",\"static/chunks/3155-34ff46f126318506.js\",\"894\",\"static/chunks/894-40193c007fae840c.js\",\"7699\",\"static/chunks/7699-4772bf8b492da950.js\",\"7138\",\"static/chunks/7138-d5cdd209b6f263c3.js\",\"5292\",\"static/chunks/5292-603149e86b85172c.js\",\"5445\",\"static/chunks/5445-d849f52378db6e17.js\",\"7096\",\"static/chunks/7096-61eaef2e63a1898f.js\",\"3843\",\"static/chunks/3843-d987c2547e7f1821.js\",\"7675\",\"static/chunks/app/(PayerDashboard)/layout-91ac5d49894c1735.js\"],\"default\",1]\n13:I[84080,[\"4705\",\"static/chunks/dc112a36-dd72e56818520f67.js\",\"9164\",\"static/chunks/9164-0d876c4ff6f41501.js\",\"3155\",\"static/chunks/3155-34ff46f126318506.js\",\"4885\",\"static/chunks/4885-4a6eda48eefeae46.js\",\"5956\",\"static/chunks/5956-453f490be873c690.js\",\"6260\",\"static/chunks/6260-d54d2b3b24496e9e.js\",\"3383\",\"static/chunks/3383-4ce9731c992d18e9.js\",\"3185\",\"static/chunks/app/layout-1c6c8d31d5320137.js\"],\"\"]\n14:I[93155,[\"4705\",\"static/chunks/dc112a36-dd72e56818520f67.js\",\"9164\",\"static/chunks/9164-0d876c4ff6f41501.js\",\"3155\",\"static/chunks/3155-34ff46f126318506.js\",\"4885\",\"static/chunks/4885-4a6eda48eefeae46.js\",\"5956\",\"static/chunks/5956-453f490be873c690.js\",\"6260\",\"static/chunks/6260-d5"])</script><script>self.__next_f.push([1,"4d2b3b24496e9e.js\",\"3383\",\"static/chunks/3383-4ce9731c992d18e9.js\",\"3185\",\"static/chunks/app/layout-1c6c8d31d5320137.js\"],\"PrimeReactProvider\",1]\n15:I[95956,[\"4705\",\"static/chunks/dc112a36-dd72e56818520f67.js\",\"9164\",\"static/chunks/9164-0d876c4ff6f41501.js\",\"3155\",\"static/chunks/3155-34ff46f126318506.js\",\"4885\",\"static/chunks/4885-4a6eda48eefeae46.js\",\"5956\",\"static/chunks/5956-453f490be873c690.js\",\"6260\",\"static/chunks/6260-d54d2b3b24496e9e.js\",\"3383\",\"static/chunks/3383-4ce9731c992d18e9.js\",\"3185\",\"static/chunks/app/layout-1c6c8d31d5320137.js\"],\"ToastContainer\",1]\n16:I[69479,[\"4705\",\"static/chunks/dc112a36-dd72e56818520f67.js\",\"9164\",\"static/chunks/9164-0d876c4ff6f41501.js\",\"3155\",\"static/chunks/3155-34ff46f126318506.js\",\"4885\",\"static/chunks/4885-4a6eda48eefeae46.js\",\"5956\",\"static/chunks/5956-453f490be873c690.js\",\"6260\",\"static/chunks/6260-d54d2b3b24496e9e.js\",\"3383\",\"static/chunks/3383-4ce9731c992d18e9.js\",\"3185\",\"static/chunks/app/layout-1c6c8d31d5320137.js\"],\"default\",1]\n1c:I[76130,[],\"\"]\n12:{}\n17:{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"}\n18:{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"}\n19:{\"display\":\"inline-block\"}\n1a:{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0}\n1d:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$Lb\",null,{\"buildId\":\"dW6TwORAZv92hzxWkHxz0\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"payer\",\"tcc\",\"certificate\"],\"initialTree\":[\"\",{\"children\":[\"(PayerDashboard)\",{\"children\":[\"payer\",{\"children\":[\"tcc\",{\"children\":[\"certificate\",{\"children\":[\"__PAGE__\",{}]}]}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"(PayerDashboard)\",{\"children\":[\"payer\",{\"children\":[\"tcc\",{\"children\":[\"certificate\",{\"children\":[\"__PAGE__\",{},[[\"$Lc\",[\"$\",\"$Ld\",null,{\"props\":{\"params\":{},\"searchParams\":{}},\"Component\":\"$e\"}],null],null],null]},[null,[\"$\",\"$Lf\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(PayerDashboard)\",\"children\",\"payer\",\"children\",\"tcc\",\"children\",\"certificate\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L10\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$Lf\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(PayerDashboard)\",\"children\",\"payer\",\"children\",\"tcc\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L10\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[null,[\"$\",\"$Lf\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(PayerDashboard)\",\"children\",\"payer\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L10\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"$L11\",null,{\"children\":[\"$\",\"$Lf\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(PayerDashboard)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L10\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}],\"params\":\"$12\"}]],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/88269f753ebcc816.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/7c127a20a518b1e5.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"2\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/a2caf21c8afae802.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"3\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/202bd9b169b3ce5b.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"4\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/5a56e3c1761e58ad.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_d5a796 __className_d5a796\",\"children\":[[\"$\",\"$L13\",null,{\"src\":\"https://login.remita.net/payment/v1/remita-pay-inline.bundle.js\"}],[\"$\",\"$L13\",null,{\"src\":\"\"}],[\"$\",\"$L14\",null,{\"children\":[[\"$\",\"$L15\",null,{\"position\":\"top-right\",\"autoClose\":5000,\"hideProgressBar\":true,\"newestOnTop\":false,\"closeOnClick\":true,\"rtl\":false,\"pauseOnFocusLoss\":true,\"draggable\":true,\"pauseOnHover\":true,\"theme\":\"light\"}],[\"$\",\"$L16\",null,{\"children\":[\"$\",\"$Lf\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L10\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":\"$17\",\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":\"$18\",\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":\"$19\",\"children\":[\"$\",\"h2\",null,{\"style\":\"$1a\",\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]}]]}]]}]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L1b\"],\"globalErrorComponent\":\"$1c\",\"missingSlots\":\"$W1d\"}]\n"])</script><script>self.__next_f.push([1,"1b:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"39x36\"}],[\"$\",\"meta\",\"3\",{\"name\":\"next-size-adjust\"}]]\nc:null\n"])</script><script src="remita-pay-inline.bundle.js.download" data-nscript="afterInteractive"></script><script src="https://borno.flopay.net/payer/tcc/certificate?tccId=112" data-nscript="afterInteractive"></script><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer></body></html>
